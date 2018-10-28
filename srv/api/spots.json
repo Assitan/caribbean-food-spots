@@ -1,0 +1,28 @@
+[{
+  "name": "Math Exotique",
+  "address": "4 Rue Danton, 78990 Élancourt",
+  "phoneNumber": "01 30 51 19 50",
+  "position": {
+    "lat": 48.7675849,
+    "lng": 1.9507808
+  },
+  "rating": 4,
+  "tags": ["Piment végétarien congelé", "Piment Bondamanjak congelé", "Boyaux de boudin", "Chatrou", "Lambis", "Boissons", "Jus"]
+},
+{
+  "name": "Grand frais Villepinte",
+  "address": "1 Voie de l'Orchidée Sauvage, 93420 Villepinte",
+  "phoneNumber": "01 43 84 98 63",
+  "position": {
+    "lat": 48.9603534,
+    "lng": 2.5378607
+  },
+  "rating": 4,
+  "tags": [
+    "Piment végétarien congelé",
+    "Piment Bondamanjak congelé",
+    "Lambis",
+    "Boissons",
+    "Jus"
+  ]
+}]
