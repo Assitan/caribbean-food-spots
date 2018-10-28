@@ -3,9 +3,9 @@
       xs12
       sm3
       order-xs1
-      class="mt-4 ml-3">
+      class="mt-4 mr-3">
       <v-card>
-        <v-card-title primary-title>
+        <v-card-title>
           <div>
             <h3 v-if="!show">Cliquez sur une icône <v-icon large color="red darken-2">map-marker</v-icon> afin d'avoir plus d'informations</h3>
             <div v-if="show">
@@ -31,6 +31,15 @@
           </v-chip>
         </div>
       </v-flex>
+      <v-card class="mt-3">
+        <v-card-title>
+          <div>
+            <p class="mb-0"><b>M</b> : Magasins</p>
+            <p class="mb-0"><b>B</b> : Boulangeries</p>
+            <p class="mb-0"><b>R</b> : Restaurants</p>
+          </div>
+        </v-card-title>
+      </v-card>
     </v-flex>
  </template>
 

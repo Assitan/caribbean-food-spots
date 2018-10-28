@@ -1,27 +1,41 @@
-import express from 'express';
-const spots = 'api/spots.json';
+const express = require('express');
+const env = require('dotenv').config();
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const morgan = require('morgan');
+const mongoose = require('mongoose');
+const spots = require('./api/spots.json');
+const stores = require('./api/stores.json');
 
-export default app => {
-  // app.use(express.json());
-  //
-  // app.get('/foo', (req, res) => {
-  //   res.json({msg: 'foo'});
-  // });
-  //
+mongoose.connect(process.env.DB_URI);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function(callback) {
+  console.log('Connection Succeeded');
+});
+
+const app = express();
+
+app.use(express.json());
+
   // app.post('/bar', (req, res) => {
   //   res.json(req.body);
   // });
-  const router = express.Router();
 
-  router.use((req, res, next) => {
-    Object.setPrototypeOf(req, app.request);
-    Object.setPrototypeOf(res, app.response);
-    req.res = res;
-    res.req = req;
-    next();
-  });
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(cors());
 
-  router.get('/spots.json', (req, res) => {
-    res.json(spots);
-  });
-};
+app.get('/spots', (req, res) => {
+  res.json(spots);
+});
+
+app.get('/stores', (req, res) => {
+  res.json(stores);
+});
+
+app.listen(process.env.PORT || 8081);
+
+console.log('listen on server');
+
+

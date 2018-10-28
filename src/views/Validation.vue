@@ -20,21 +20,22 @@
 import stores from '../../srv/api/stores.json';
 
 export default {
-    data () {
-      return {
-        headers: [
-          {
-            text: 'Nom',
-            align: 'left',
-            sortable: false,
-            value: 'name'
-          },
-          { text: 'Adresse', sortable: false, value: 'address' },
-          { text: 'Description', sortable: false, value: 'desc' },
-          { text: 'Email', sortable: false, value: 'email' },
-          { text: 'Date', sortable: false, value: 'datetime' },
-        ],
-      }
-    }
-  }
+  data() {
+    return {
+      stores,
+      headers: [
+        {
+          text: 'Nom',
+          align: 'left',
+          sortable: false,
+          value: 'name',
+        },
+        { text: 'Adresse', sortable: false, value: 'address' },
+        { text: 'Description', sortable: false, value: 'desc' },
+        { text: 'Email', sortable: false, value: 'email' },
+        { text: 'Date', sortable: false, value: 'datetime' },
+      ],
+    };
+  },
+};
 </script>

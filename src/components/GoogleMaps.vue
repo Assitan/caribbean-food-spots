@@ -21,11 +21,12 @@
       </GmapInfoWindow>
       <GmapMarker
         :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
+        v-for="(marker, index) in markers"
+        :position="marker.position"
         :clickable="true"
         :draggable="true"
-        @click="toggleInfoWindow(m,index)"
+        :label="marker.type"
+        @click="toggleInfoWindow(marker, index)"
       />
     </GmapMap>
   </v-flex>
@@ -90,12 +91,12 @@ export default {
     },
     usePlace(place) {
       if (this.place) {
-        // this.markers.push({
-        //   position: {
-        //     lat: this.place.geometry.location.lat(),
-        //     lng: this.place.geometry.location.lng(),
-        //   }
-        // })
+        this.markers.push({
+          position: {
+            lat: this.place.geometry.location.lat(),
+            lng: this.place.geometry.location.lng(),
+          },
+        });
         this.place = null;
       }
     },
