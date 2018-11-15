@@ -1,5 +1,7 @@
 # caribbean-food-spots
 
+Find exotics food spots with Google Maps.
+
 ## Project setup
 ```
 yarn install
