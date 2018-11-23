@@ -16,7 +16,11 @@
       map-type-id="terrain"
       style="width: 100%; height: 400px; margin-left: auto; margin-right: auto;"
     >
-      <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen=false">
+      <GmapInfoWindow
+        :options="infoOptions"
+        :position="infoWindowPos"
+        :opened="infoWinOpen"
+        @closeclick="infoWinOpen=false">
         {{infoContent}}
       </GmapInfoWindow>
       <GmapMarker
@@ -89,7 +93,7 @@ export default {
     setPlace(place) {
       this.place = place;
     },
-    usePlace(place) {
+    usePlace() {
       if (this.place) {
         this.markers.push({
           position: {
@@ -107,9 +111,7 @@ export default {
       // check if its the same marker that was selected if yes toggle
       if (this.currentMidx === idx) {
         this.infoWinOpen = !this.infoWinOpen;
-      }
-      // if different marker set infowindow to open and reset current marker index
-      else {
+      } else { // if different marker set infowindow to open and reset current marker index
         this.infoWinOpen = true;
         this.currentMidx = idx;
       }

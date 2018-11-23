@@ -23,9 +23,11 @@
 
         <v-card-text>
           <p>
-          Essayez d'être le plus précis possible dans la description si vous ne pouvez pas fournir une adresse exacte ou un nom.
+          Essayez d'être le plus précis possible dans la description
+          si vous ne pouvez pas fournir une adresse exacte ou un nom.
           Cela nous permettra de faire des recherches.</p>
-          <p>L'adresse email est facultative mais vous permettra d'être notifié lors de la publication de la boutique que vous avez soumis.
+          <p>L'adresse email est facultative mais vous permettra d'être notifié
+          lors de la publication de la boutique que vous avez soumis.
           Vous recevrez aussi un email si votre ajout n'est pas validé.
           </p>
 
@@ -51,7 +53,7 @@
               name="input-7-1"
               v-model="desc"
               label="Description"
-              value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
+              value="The Woodman set to work at once."
               hint="Hint text"
             ></v-textarea>
           </v-form>

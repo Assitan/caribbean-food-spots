@@ -1,30 +1,78 @@
-[{
-  "name": "Math Exotique",
-  "address": "4 Rue Danton, 78990 Élancourt",
-  "phoneNumber": "01 30 51 19 50",
-  "position": {
-    "lat": 48.7675849,
-    "lng": 1.9507808
+[
+  {
+    "name": "Math Exotique",
+    "address": "4 Rue Danton, 78990 Élancourt",
+    "phoneNumber": "01 30 51 19 50",
+    "position": {
+      "lat": 48.7675849,
+      "lng": 1.9507808
+    },
+    "rating": 4,
+    "type": "M",
+    "tags": ["Piment végétarien congelé", "Piment Bondamanjak congelé", "Boyaux de boudin", "Chatrou", "Lambis", "Boissons", "Jus"]
   },
-  "rating": 4,
-  "type": "M",
-  "tags": ["Piment végétarien congelé", "Piment Bondamanjak congelé", "Boyaux de boudin", "Chatrou", "Lambis", "Boissons", "Jus"]
-},
-{
-  "name": "Grand frais Villepinte",
-  "address": "1 Voie de l'Orchidée Sauvage, 93420 Villepinte",
-  "phoneNumber": "01 43 84 98 63",
-  "position": {
-    "lat": 48.9603534,
-    "lng": 2.5378607
+  {
+    "name": "Grand frais Villepinte",
+    "address": "1 Voie de l'Orchidée Sauvage, 93420 Villepinte",
+    "phoneNumber": "01 43 84 98 63",
+    "position": {
+      "lat": 48.9603534,
+      "lng": 2.5378607
+    },
+    "rating": 4,
+    "type": "M",
+    "tags": [
+      "Piment végétarien congelé",
+      "Piment Bondamanjak congelé",
+      "Lambis",
+      "Boissons",
+      "Jus"
+    ]
   },
-  "rating": 4,
-  "type": "M",
-  "tags": [
-    "Piment végétarien congelé",
-    "Piment Bondamanjak congelé",
-    "Lambis",
-    "Boissons",
-    "Jus"
-  ]
-}]
+  {
+    "name": "Kodie",
+    "address": "16 Rue des Grands Pêchers, 93100 Montreuil",
+    "phoneNumber": "",
+    "position": {
+      "lat": 48.858768,
+      "lng": 2.463533
+    },
+    "rating": 0,
+    "type": "M",
+    "tags": [
+      "Boissons",
+      "Jus"
+    ]
+  },
+  {
+    "name": "R.K.V Store",
+    "address": "26 Rue Lenain de Tillemont",
+    "phoneNumber": "",
+    "position": {
+      "lat": 48.861439,
+      "lng": 2.456443
+    },
+    "rating": 0,
+    "type": "M",
+    "tags": [
+      "Boissons",
+      "Jus"
+    ]
+  },
+  {
+    "name": "Alimentation générale",
+    "address": "17 Boulevard Paul Vaillant Couturier",
+    "phoneNumber": "",
+    "position": {
+      "lat": 48.864101,
+      "lng": 2.441962
+    },
+    "rating": 0,
+    "type": "M",
+    "tags": [
+      "Boissons",
+      "Jus"
+    ]
+  }
+]
+

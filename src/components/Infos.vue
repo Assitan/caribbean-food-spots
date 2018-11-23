@@ -7,7 +7,9 @@
       <v-card>
         <v-card-title>
           <div>
-            <h3 v-if="!show">Cliquez sur une icône <v-icon large color="red darken-2">map-marker</v-icon> afin d'avoir plus d'informations</h3>
+            <h3 v-if="!show">Cliquez sur une icône
+              <v-icon large color="red darken-2">map-marker</v-icon> afin d'avoir plus d'informations
+            </h3>
             <div v-if="show">
               <h3 class="headline mb-3">Informations</h3>
               <p><b>Nom</b> : {{infos.name}}</p>
