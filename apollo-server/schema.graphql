@@ -2,14 +2,14 @@
 scalar JSON
 scalar Upload
 
-type Spot {
+type Query {
   name: String!
   address: Store!
   phoneNumber: String!
-  position:Position!
+  position: Position!
   rating: Int
   type: String
-  tags: [String]
+  tags: [String!]
 }
 
 type Store {
